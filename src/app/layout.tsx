@@ -18,13 +18,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} min-h-screen bg-green-50`}>
+      <body className={`${inter.className} min-h-screen bg-[#f8faf8]`}>
         <div className="relative z-10">
           <nav className="bg-white shadow-lg">
             <div className="max-w-[1400px] mx-auto px-6">
               <div className="flex justify-between h-16">
-                <div className="flex items-center gap-2">
-                  <div className="relative w-8 h-8">
+                <div className="flex items-center gap-3">
+                  <div className="relative w-10 h-10">
                     <Image
                       src="/rvcc-logo.png"
                       alt="RVCC Logo"
@@ -33,20 +33,20 @@ export default function RootLayout({
                       priority
                     />
                   </div>
-                  <Link href="/" className="text-green-800 font-bold text-xl">
+                  <Link href="/" className="text-[#006747] font-bold text-xl">
                     RVCC Masters Pool
                   </Link>
                 </div>
-                <div className="flex items-center space-x-4">
-                  <Link href="/" className="text-green-800 hover:text-green-600">
+                <div className="flex items-center space-x-6">
+                  <Link href="/" className="text-[#006747] hover:text-[#008759] font-medium">
                     Home
                   </Link>
                   <Link 
                     href="/scoring" 
-                    className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors shadow-md hover:shadow-lg flex flex-col items-center text-sm"
+                    className="bg-[#006747] text-white px-5 py-2 rounded-lg hover:bg-[#008759] transition-colors shadow-md hover:shadow-lg flex flex-col items-center text-sm"
                   >
-                    <span>Live Scoring</span>
-                    <span className="text-xs">(Available 2 PM EST 4/17)</span>
+                    <span className="font-medium">Live Scoring</span>
+                    <span className="text-xs">(Available 2 PM EST 4/10)</span>
                   </Link>
                 </div>
               </div>
@@ -56,7 +56,7 @@ export default function RootLayout({
             {children}
           </main>
           <footer className="bg-white shadow-lg mt-8">
-            <div className="max-w-[1400px] mx-auto px-6 py-4 text-center text-green-800">
+            <div className="max-w-[1400px] mx-auto px-6 py-4 text-center text-[#006747]">
               © 2025 Waldo Enterprises
             </div>
           </footer>
