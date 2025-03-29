@@ -4,25 +4,27 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center space-y-8">
       <div className="text-center">
-        <div className="relative w-48 h-48 mx-auto mb-6">
-          <Image
-            src="/rvcc-logo.png"
-            alt="Raritan Valley Country Club Logo"
-            fill
-            className="object-contain"
-            priority
-          />
+        <div className="flex items-center justify-center gap-4 mb-4">
+          <div className="relative w-16 h-16">
+            <Image
+              src="/rvcc-logo.png"
+              alt="Raritan Valley Country Club Logo"
+              fill
+              className="object-contain rounded-full"
+              priority
+            />
+          </div>
+          <h1 className="text-5xl font-bold text-green-800">
+            RVCC Masters Pool
+          </h1>
         </div>
-        <h1 className="text-5xl font-bold text-green-800 mb-4">
-          RVCC Masters Pool
-        </h1>
         <p className="text-xl text-green-700">
           Join us for the 2025 Masters Tournament Pool
         </p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-[1400px]">
-        <div className="bg-white/90 p-8 rounded-lg shadow-lg backdrop-blur-sm">
+        <div className="bg-white p-8 rounded-lg shadow-lg">
           <h2 className="text-2xl font-semibold text-green-800 mb-4">
             Pool Rules
           </h2>
@@ -34,7 +36,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="bg-white/90 p-8 rounded-lg shadow-lg backdrop-blur-sm">
+        <div className="bg-white p-8 rounded-lg shadow-lg">
           <h2 className="text-2xl font-semibold text-green-800 mb-4">
             Enter the Pool
           </h2>
@@ -57,7 +59,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-white/90 p-6 rounded-lg shadow-lg w-full max-w-[1400px] text-center backdrop-blur-sm">
+      <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-[1400px] text-center">
         <h2 className="text-2xl font-semibold text-green-800 mb-4">
           Tournament Details
         </h2>

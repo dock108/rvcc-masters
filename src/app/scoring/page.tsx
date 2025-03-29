@@ -5,8 +5,11 @@ export default function Scoring() {
         <h1 className="text-4xl font-bold text-green-800 mb-4">
           Live Scoring
         </h1>
-        <p className="text-xl text-green-700">
+        <p className="text-xl text-green-700 mb-2">
           Coming Soon
+        </p>
+        <p className="text-lg text-green-600">
+          Live scoring will be available starting at 2:00 PM EST on Thursday, April 10, 2025
         </p>
       </div>
 
@@ -15,7 +18,10 @@ export default function Scoring() {
           Tournament Updates
         </h2>
         <p className="text-green-700">
-          Live scoring and tournament updates will be available here during the Masters Tournament.
+          Check back here during the Masters Tournament for live scoring updates and standings.
+        </p>
+        <p className="text-green-600 mt-4 text-sm">
+          Scores will be updated regularly throughout the tournament.
         </p>
       </div>
     </div>
