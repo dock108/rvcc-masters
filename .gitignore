@@ -34,3 +34,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+sheets/Crestmont Masters Pool 2025.xlsm
+sheets/~$Crestmont Masters Pool 2025.xlsm
+sheets/Masters Pool Entries 2025 FINAL.csv

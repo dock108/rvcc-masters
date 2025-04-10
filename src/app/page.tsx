@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -42,31 +43,25 @@ export default function Home() {
               Your score will be the total of your top 5 players
             </p>
             <p className="font-semibold mt-6 text-[#006747] border-t border-gray-100 pt-6">
-              Entry Deadline: Before opening tee shot on Thursday, April 10, 2025
+              Entry Deadline: Passed
             </p>
           </div>
         </div>
 
-        <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
-          <h2 className="text-3xl font-semibold text-[#006747] mb-6">
-            Enter the Pool
+        <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100 flex flex-col items-center justify-center">
+          <h2 className="text-3xl font-semibold text-[#006747] mb-6 text-center">
+            View Live Standings
           </h2>
-          <p className="text-[#2d614d] text-lg mb-4">
-            Select your 7 golfers for the 2025 Masters Tournament
+          <p className="text-[#2d614d] text-lg mb-8 text-center">
+            The entry deadline has passed. Check the live scoring page for updates!
           </p>
-          <p className="text-[#2d614d] mb-8">
-            Choose wisely - remember you need 5 to make the cut!
-          </p>
-          <a
-            href="https://www.surveymonkey.com/r/YZB675F"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center bg-[#006747] text-white px-10 py-4 rounded-lg hover:bg-[#008759] transition-colors shadow-md hover:shadow-lg w-full md:w-auto text-lg font-medium"
+          <Link 
+            href="/scoring" 
+            className="inline-flex flex-col items-center justify-center bg-[#006747] text-white px-10 py-4 rounded-lg hover:bg-[#008759] transition-colors shadow-md hover:shadow-lg w-full md:w-auto text-lg font-medium"
           >
-            <span className="mr-2">🏌️‍♂️</span>
-            Submit Your Entry
-            <span className="ml-2">🏌️‍♂️</span>
-          </a>
+            <span className="font-medium">Go to Live Scoring</span>
+            <span className="text-xs mt-1">(Available 2 PM EST 4/10)</span>
+          </Link>
         </div>
       </div>
 
@@ -77,7 +72,7 @@ export default function Home() {
         <div className="space-y-3 text-[#2d614d] text-lg">
           <p>Augusta National Golf Club</p>
           <p>April 10-13, 2025</p>
-          <p className="font-semibold text-[#006747]">Entry Deadline: Before First Tee Shot on Thursday</p>
+          <p className="font-semibold text-[#006747]">Entry Deadline: Passed</p>
         </div>
       </div>
     </div>
